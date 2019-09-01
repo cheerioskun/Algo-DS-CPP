@@ -1,3 +1,4 @@
-.class
-.out
-.json
+*.class
+*.out
+*.json
+*.vscode
