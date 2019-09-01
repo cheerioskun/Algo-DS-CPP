@@ -57,6 +57,9 @@ public class WQUPC{
 
     // Find operation -- O(lg n)
     public boolean connected(int p, int q){
+        if(p <= 0 || p >= id.length || q <= 0 || q >= id.length){
+            throw new IllegalArgumentException("Either p or q does not exist in the data structure");
+        }
         return (root(p) == root(q));
     }
 
