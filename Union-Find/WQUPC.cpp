@@ -11,14 +11,10 @@ class UF{
         }
     }
     int root(int p){
-        int r = p;
-        while(r != id[r]) r = id[r];
-        while(p != id[p]){
-            int temp = id[p];
-            id[p] = r;
-            p = temp;
+        if(id[p] == p){
+            return p;
         }
-        return r;
+        return id[p] = root(id[p]);
     }
     bool connected(int p, int q){
         return root(p) == root(q);

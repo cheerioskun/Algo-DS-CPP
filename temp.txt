@@ -1,0 +1,1 @@
+#include<bits/stdc++.h>\n#define f first\n#define s second\n#define MOD 1000000007L\n#define endl '\n'\ntypedef long long int ll;\ntypedef vector<int> vi;\ntypedef pair<int, int> pii;\nusing namespace std;\n\nint main(){\n\t${1}\n}
